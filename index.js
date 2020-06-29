@@ -17,6 +17,7 @@ const keystone = new Keystone({
   adapter: new Adapter(adapterConfig),
   cookie: {
     // secure: process.env.NODE_ENV === 'production', // Defaults to true in production
+    secure: false,
     maxAge: 1000 * 60 * 60 * 24 * 30, // 30 days
     sameSite: false,
   },
