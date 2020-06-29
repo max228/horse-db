@@ -21,6 +21,7 @@ const keystone = new Keystone({
     maxAge: 1000 * 60 * 60 * 24 * 30, // 30 days
     sameSite: false,
   },
+  cookieSecret: "shmekkek",
   onConnect: process.env.CREATE_TABLES !== 'true' && initialiseData,
 });
 
