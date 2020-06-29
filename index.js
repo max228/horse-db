@@ -9,7 +9,7 @@ const initialiseData = require('./initial-data');
 const { MongooseAdapter: Adapter } = require('@keystonejs/adapter-mongoose');
 
 const PROJECT_NAME = 'horseDB';
-const adapterConfig = { mongoUri: 'mongodb://localhost/horse-db' };
+const adapterConfig = { mongoUri: 'mongodb://developer:0fMv4lU1j9Nv8nmm@104.248.18.54/horsedb' };
 
 
 const keystone = new Keystone({
