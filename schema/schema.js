@@ -18,7 +18,6 @@ const Owner = {
       type: CalendarDay,
       yearRangeFrom: '1990',
       yearRangeTo: '2020',
-      isRequired: true,
       label: 'Дата Рождения'
     },
     field: {
@@ -40,6 +39,14 @@ const Owner = {
       ref: 'Horse.owner',
       many: true,
       label: 'Лошади'
+    },
+    emergencyContactName: {
+      type: Text,
+      label: "Имя доп. контакта"
+    },
+    emergencyContact: {
+      Type: Text,
+      label: "Телефон"
     }
   }
 }
@@ -54,7 +61,6 @@ const Horse = {
       type: CalendarDay,
       yearRangeFrom: '1990',
       yearRangeTo: '2020',
-      isRequired: true,
       label: 'Дата Рождения'
     },
     owner: {
