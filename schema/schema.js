@@ -45,7 +45,7 @@ const Owner = {
       label: "Имя доп. контакта"
     },
     emergencyContact: {
-      Type: Text,
+      type: Text,
       label: "Телефон"
     }
   }
